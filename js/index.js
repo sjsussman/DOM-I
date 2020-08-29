@@ -49,17 +49,28 @@ anchor[3].textContent = siteContent.nav["nav-item-4"];
 anchor[4].textContent = siteContent.nav["nav-item-5"];
 anchor[5].textContent = siteContent.nav["nav-item-6"];
 
+/*added new anchor elements*/
+let navNew = document.querySelector('nav');
 
-anchor.appendChild('Learn More')
+let anchorAppend = document.createElement('a')
+let anchorTextAppend = document.createTextNode('Appended')
+anchorAppend.appendChild(anchorTextAppend);
+anchorAppend.href = '#';
+navNew.appendChild(anchorAppend);
 
+let anchorPrepend = document.createElement('a')
+let anchorTextPrepended = document.createTextNode('Prepended')
+anchorPrepend.appendChild(anchorTextPrepended);
+anchorPrepend.href = '#';
+navNew.prepend(anchorPrepend)
 
+/*change color of anchor elements*/
 for (let i = 0; i<anchor.length; i++){
   anchor[i].style.color = 'green'
 }
 
-
 let header = document.querySelector('h1');
-header.textContent = siteContent.cta.h1
+header.innerHTML = 'DOM<br> IS<br> AWESOME' //siteContent['cta']['h1']
 
 let button = document.querySelector('button');
 button.textContent = siteContent.cta.button
@@ -90,13 +101,8 @@ hfour[4].textContent = siteContent["main-content"]["vision-h4"]
 ptag[4].textContent = siteContent["main-content"]["vision-content"]
 
 hfour[5].textContent = siteContent["contact"]["contact-h4"]
-ptag[5].textContent = siteContent["contact"]["address"]
+ptag[5].innerHTML = '123 Way 456 Street<br>Somewhere, USA' //siteContent["contact"]["address"]
 ptag[6].textContent = siteContent["contact"]["phone"]
 ptag[7].textContent = siteContent["contact"]["email"]
 
 ptag[8].textContent = siteContent['footer']['copyright']
-
-let anchorNew = document.createElement('a')
-let 
-
-parent.appendChild('a')
