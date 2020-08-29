@@ -40,3 +40,63 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+let anchor = document.getElementsByTagName('a');
+anchor[0].textContent = siteContent.nav["nav-item-1"];
+anchor[1].textContent = siteContent.nav["nav-item-2"];
+anchor[2].textContent = siteContent.nav["nav-item-3"];
+anchor[3].textContent = siteContent.nav["nav-item-4"];
+anchor[4].textContent = siteContent.nav["nav-item-5"];
+anchor[5].textContent = siteContent.nav["nav-item-6"];
+
+
+anchor.appendChild('Learn More')
+
+
+for (let i = 0; i<anchor.length; i++){
+  anchor[i].style.color = 'green'
+}
+
+
+let header = document.querySelector('h1');
+header.textContent = siteContent.cta.h1
+
+let button = document.querySelector('button');
+button.textContent = siteContent.cta.button
+
+let logo2 = document.getElementById("cta-img");
+logo2.setAttribute('src', siteContent["cta"]["img-src"])
+
+let hfour = document.querySelectorAll('h4')
+hfour[0].textContent = siteContent["main-content"]["features-h4"]
+
+let ptag = document.getElementsByTagName('p')
+ptag[0].textContent = siteContent["main-content"]["features-content"]
+
+
+hfour[1].textContent = siteContent["main-content"]["about-h4"]
+ptag[1].textContent = siteContent["main-content"]["about-content"]
+
+let img = document.getElementById('middle-img')
+img.setAttribute('src', siteContent["main-content"]["middle-img-src"])
+
+hfour[2].textContent = siteContent["main-content"]["services-h4"]
+ptag[2].textContent = siteContent["main-content"]["services-content"]
+
+hfour[3].textContent = siteContent["main-content"]["product-h4"]
+ptag[3].textContent = siteContent["main-content"]["product-content"]
+
+hfour[4].textContent = siteContent["main-content"]["vision-h4"]
+ptag[4].textContent = siteContent["main-content"]["vision-content"]
+
+hfour[5].textContent = siteContent["contact"]["contact-h4"]
+ptag[5].textContent = siteContent["contact"]["address"]
+ptag[6].textContent = siteContent["contact"]["phone"]
+ptag[7].textContent = siteContent["contact"]["email"]
+
+ptag[8].textContent = siteContent['footer']['copyright']
+
+let anchorNew = document.createElement('a')
+let 
+
+parent.appendChild('a')
