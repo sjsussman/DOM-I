@@ -108,3 +108,32 @@ ptag[6].textContent = siteContent["contact"]["phone"]
 ptag[7].textContent = siteContent["contact"]["email"]
 
 ptag[8].textContent = siteContent['footer']['copyright']
+
+
+//STRETCH GOAL
+
+let button2 = document.createElement('button');
+button2.innerHTML = 'Do Something';
+const footer = document.querySelector('footer');
+footer.appendChild(button2);
+
+button2.addEventListener('click', ()=>
+{
+  ptag[0].style.color = 'blue';
+  ptag[1].style.color = 'red';
+  ptag[2].style.color = 'purple';
+  ptag[3].style.color = 'orange';
+  ptag[4].style.color = 'green';
+  ptag[5].style.color = 'pink';
+  ptag[6].style.color = 'pink';
+  ptag[7].style.color = 'pink';
+
+  
+
+})
+
+hfour.forEach((hfour) => {
+  button2.addEventListener('click', () =>{
+    hfour.style.fontSize = '2em';
+  })
+})
