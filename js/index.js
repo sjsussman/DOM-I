@@ -71,6 +71,7 @@ for (let i = 0; i<anchor.length; i++){
 
 let header = document.querySelector('h1');
 header.innerHTML = 'DOM<br> IS<br> AWESOME' //siteContent['cta']['h1']
+// header.textContent = siteContent['cta']['h1']
 
 let button = document.querySelector('button');
 button.textContent = siteContent.cta.button
@@ -102,6 +103,7 @@ ptag[4].textContent = siteContent["main-content"]["vision-content"]
 
 hfour[5].textContent = siteContent["contact"]["contact-h4"]
 ptag[5].innerHTML = '123 Way 456 Street<br>Somewhere, USA' //siteContent["contact"]["address"]
+// ptag[5].textContent = siteContent['contact']['address']
 ptag[6].textContent = siteContent["contact"]["phone"]
 ptag[7].textContent = siteContent["contact"]["email"]
 
